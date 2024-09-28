@@ -304,6 +304,11 @@ function generatePDF() {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
 
+    // Add Poppins font
+  doc.addFont('https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1tvFP-KUEg.ttf', 'Poppins', 'normal');
+  doc.addFont('https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1tvFP-KUEg.ttf', 'Poppins', 'bold');
+  doc.setFont('Poppins');
+
   // Add logo to the PDF
   const logoImg = new Image();
   logoImg.src = 'logo.png';
