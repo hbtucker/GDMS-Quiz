@@ -320,7 +320,7 @@ function generatePDF() {
 
     doc.setFontSize(20);
     doc.setFont('Poppins', 'bold');
-    doc.text("General Decision Making Style Results", 105, 25, null, null, "center");
+    doc.text("General Decision Making Style Results", 105, 25, null, null, "left");
 
     doc.setFontSize(12);
     doc.setFont('Poppins', 'bold');
@@ -359,7 +359,7 @@ function generatePDF() {
 
     html2canvas(document.getElementById("radarChart")).then(canvas => {
       const imgData = canvas.toDataURL("image/png");
-      const imgWidth = 150;
+      const imgWidth = 140;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       doc.addPage();
       doc.addImage(imgData, "PNG", 15, 20, imgWidth, imgHeight);
