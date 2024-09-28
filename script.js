@@ -320,7 +320,7 @@ function generatePDF() {
 
     doc.setFontSize(20);
     doc.setFont('Poppins', 'bold');
-    doc.text("General Decision Making Style Results", 105, 25, null, null, "center");
+    doc.text("Decision Making Style Results", 105, 25, null, null, "center");
 
     doc.setFontSize(12);
     doc.setFont('Poppins', 'bold');
@@ -333,7 +333,7 @@ function generatePDF() {
 
     categories.forEach(category => {
       const score = (scores[category] / maxScore) * 100;
-      doc.text(`${category}: ${score.toFixed(0)}%`, 30, yPos);
+      doc.text(`${category}: ${score}%`, 30, yPos);
       yPos += 10;
     });
 
