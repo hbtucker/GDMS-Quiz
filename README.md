@@ -1,2 +1,2 @@
 # GDMS-Quiz
-General Decision Making Survey
+General Decision Making Quiz, built with CSS, HTML, and JS.
