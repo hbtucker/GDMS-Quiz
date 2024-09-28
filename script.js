@@ -341,8 +341,8 @@ function generatePDF() {
     doc.setFont('Poppins', 'bold');
     doc.text("Decision Descriptions", 20, yPos);
     yPos += 10;
-    doc.setFont('Poppins', 'light');
-    doc.setFontSize(12);
+    doc.setFont('Poppins', 'normal');
+    doc.setFontSize(13);
     const additionalText = [
       "This quiz assesses your general decision making style based on the standardised GDMS survey.",
       "Rational/systemic: emphasises a thorough search for and logical evaluation of alternatives.",
