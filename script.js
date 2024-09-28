@@ -359,7 +359,7 @@ function generatePDF() {
 
     html2canvas(document.getElementById("radarChart")).then(canvas => {
       const imgData = canvas.toDataURL("image/png");
-      const imgWidth = 140;
+      const imgWidth = 150;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       doc.addPage();
       doc.addImage(imgData, "PNG", 15, 20, imgWidth, imgHeight);
