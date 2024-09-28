@@ -349,8 +349,7 @@ function generatePDF() {
       "Avoidant: emphasises postponing and avoiding decisions.",
       "Dependent: emphasises a search for advice and direction from others.",
       "Intuitive: emphasises a reliance on hunches and feelings.",
-      "Spontaneous: emphasises a sense of immediacy and a desire to get through the decision-making process as soon as possible.",
-      "If you have equally high scores in more than one area, it means that you regularly use more than one decision-making style.",
+      "Spontaneous: emphasises a sense of immediacy and a desire to get through the decision-making process as soon as possible. If you have equally high scores in more than one area, it means that you regularly use more than one decision-making style.",
       "Skilled decision-makers are able to use more than one style and in real life most of us do. They're able to be flexible and use the style that best fits the situation."
     ];
     additionalText.forEach(text => {
