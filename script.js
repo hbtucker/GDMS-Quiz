@@ -284,7 +284,7 @@ function showResults() {
             display: false
           },
           suggestedMin: 0,
-          suggestedMax: 100
+          suggestedMax: 40
         }
       }
     }
