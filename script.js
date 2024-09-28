@@ -342,7 +342,7 @@ function generatePDF() {
     doc.text("Decision Descriptions", 20, yPos);
     yPos += 10;
     doc.setFont('Poppins', 'normal');
-    doc.setFontSize(10);
+    doc.setFontSize(14);
     const additionalText = [
       "This quiz assesses your general decision making style based on the standardised GDMS survey.",
       "Rational/systemic: emphasises a thorough search for and logical evaluation of alternatives.",
@@ -360,7 +360,7 @@ function generatePDF() {
 
     html2canvas(document.getElementById("radarChart")).then(canvas => {
       const imgData = canvas.toDataURL("image/png");
-      const imgWidth = 150;
+      const imgWidth = 180;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       doc.addPage();
       doc.addImage(imgData, "PNG", 15, 20, imgWidth, imgHeight);
