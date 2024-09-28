@@ -320,8 +320,7 @@ function generatePDF() {
 
     doc.setFontSize(20);
     doc.setFont('Poppins', 'bold');
-    doc.text("General Decision Making Style Results", 20, yPos);
-    yPos += 10;
+    doc.text("Decision Making Style Results", 105, 25, null, null, "center");
 
     doc.setFontSize(12);
     doc.setFont('Poppins', 'bold');
