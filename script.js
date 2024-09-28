@@ -333,7 +333,7 @@ function generatePDF() {
 
     categories.forEach(category => {
       const score = (scores[category] / maxScore) * 100;
-      doc.text(`${category}: ${score.toFixed(2)}%`, 30, yPos);
+      doc.text(`${category}: ${score.toFixed(0)}%`, 30, yPos);
       yPos += 10;
     });
 
