@@ -213,6 +213,8 @@ let currentQuestion = 0;
 let scores = { Systemic: 0, Intuitive: 0, Dependent: 0, Avoidant: 0, Spontaneous: 0 };
 let userAnswers = [];
 
+const startPageEl = document.getElementById("start-page");
+const startQuizBtn = document.getElementById("start-quiz");
 const questionEl = document.getElementById("question");
 const choicesEl = document.getElementById("choices");
 const quizEl = document.getElementById("quiz");
@@ -221,6 +223,14 @@ const restartBtn = document.getElementById("restart");
 const downloadPDFBtn = document.getElementById("downloadPDF");
 const progressBarEl = document.getElementById("progress-bar");
 const progressTextEl = document.getElementById("progress-text");
+
+startQuizBtn.addEventListener("click", startQuiz);
+
+function startQuiz() {
+  startPageEl.style.display = "none";
+  quizEl.style.display = "block";
+  loadQuestion();
+}
 
 function loadQuestion() {
   if (currentQuestion < quizData.length) {
@@ -308,6 +318,10 @@ function showResults() {
         legend: {
           position: 'top',
         },
+        title: {
+          display: true,
+          text: 'Your Decision Making Style Profile'
+        }
       }
     }
   });
@@ -317,9 +331,8 @@ function restartQuiz() {
   currentQuestion = 0;
   scores = { Systemic: 0, Intuitive: 0, Dependent: 0, Avoidant: 0, Spontaneous: 0 };
   userAnswers = [];
-  quizEl.style.display = "block";
   resultsEl.style.display = "none";
-  loadQuestion();
+  startPageEl.style.display = "block";
 }
 
 function generatePDF() {
@@ -366,14 +379,14 @@ function generatePDF() {
     doc.setFont('Poppins', 'normal');
     doc.setFontSize(10);
     const additionalText = [
-      "This quiz assesses your general decision making style based on the standardised GDMS survey.",
+	  "This quiz assesses your general decision making style based on the standardised GDMS survey.",
       "Systemic style: Systemic or rational decision makers tend to make decisions slowly and carefully, ensuring they have all the facts before proceeding. This style emphasises searching and evaluating alternatives.",
       "Intuitive style: When making a decision, you tend to rely on your feelings. Intuitive decision making emphasises a reliance on hunches and instinct.",
 	  "Dependent style: May find it hard to make decisions without other people's support. Dependent decision making emphasises a search for advice and direction from others.",
 	  "Avoidant style: Tends to dislike making important decisions, making you feel uneasy and uncomfortable. Avoidant decision making emphasises postponing and avoiding decisions.",
       "Spontaneous style: Able to make important decisions quickly and easily, often based on impulses. This style emphasises a sense of immediacy and a desire to get through the decision-making process as soon as possible.",
-      "If you have equally high scores in more than one area, it means that you regularly use more than one decision-making style. Skilled decision-makers are able to use more than one style and in real life most of us do. They're able to be flexible and use the style that best fits the situation."
-	  "To learn more about decision making styles, check out this course on the [Neuropsychology of Decision Making from the University of Cambridge](https://learning.edx.org/course/course-v1:UniversityofCambridge+2223EDX002+2T2024/home)"
+      "If you have equally high scores in more than one area, it means that you regularly use more than one decision-making style. Skilled decision-makers are able to use more than one style and in real life most of us do. They're able to be flexible and use the style that best fits the situation.",
+	  "To learn more about decision making styles, check out this course on the [Neuropsychology of Decision Making from the University of Cambridge](https://learning.edx.org/course/course-v1:UniversityofCambridge+2223EDX002+2T2024/home)",
     ];
     additionalText.forEach(text => {
       doc.text(text, 20, yPos, { maxWidth: 170 });
@@ -400,5 +413,3 @@ function notifyPDFDownload() {
 
 restartBtn.addEventListener("click", restartQuiz);
 downloadPDFBtn.addEventListener("click", generatePDF);
-
-loadQuestion();
