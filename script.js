@@ -370,7 +370,7 @@ function generatePDF() {
 
     yPos += 10;
     doc.setFont('Poppins', 'bold');
-    doc.text("Decision Descriptions", 20, yPos);
+    doc.text("Decision Style Descriptions", 20, yPos);
     yPos += 10;
     doc.setFont('Poppins', 'normal');
     doc.setFontSize(12);
