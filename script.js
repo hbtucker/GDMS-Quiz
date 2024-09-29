@@ -318,10 +318,6 @@ function showResults() {
         legend: {
           position: 'top',
         },
-        title: {
-          display: true,
-          text: 'Your Decision Making Style Profile'
-        }
       }
     }
   });
