@@ -351,7 +351,7 @@ function generatePDF() {
 
     doc.setFontSize(20);
     doc.setFont('Poppins', 'bold');
-    doc.text("General Decision Making Style Results", 105, 25, null, null, "center");
+    doc.text("Decision Making Style Results", 105, 25, null, null, "center");
 
     doc.setFontSize(12);
     doc.setFont('Poppins', 'bold');
@@ -382,7 +382,7 @@ function generatePDF() {
 	  "Avoidant style: Tends to dislike making important decisions, making you feel uneasy and uncomfortable. Avoidant decision making emphasises postponing and avoiding decisions.",
       "Spontaneous style: Able to make important decisions quickly and easily, often based on impulses. This style emphasises a sense of immediacy and a desire to get through the decision-making process as soon as possible.",
       "If you have equally high scores in more than one area, it means that you regularly use more than one decision-making style. Skilled decision-makers are able to use more than one style and in real life most of us do. They're able to be flexible and use the style that best fits the situation.",
-	  "To learn more about decision making styles, check out this course on the [Neuropsychology of Decision Making from the University of Cambridge](https://learning.edx.org/course/course-v1:UniversityofCambridge+2223EDX002+2T2024/home)",
+	  "To learn more about decision making styles, check out this course on the Neuropsychology of Decision Making from the University of Cambridge: https://learning.edx.org/course/course-v1:UniversityofCambridge+2223EDX002+2T2024/home",
     ];
     additionalText.forEach(text => {
       doc.text(text, 20, yPos, { maxWidth: 170 });
