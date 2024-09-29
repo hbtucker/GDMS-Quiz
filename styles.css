@@ -134,12 +134,12 @@ button:hover {
 }
 
 #start-quiz {
-    background-color: #00cd9a;
+    background-color: #1f1f1f;
     font-size: 18px;
     padding: 15px 30px;
 }
 
 #start-quiz:hover {
-    background-color: #1f1f1f;
+    background-color: #00cd9a;
     color: white;
 }
