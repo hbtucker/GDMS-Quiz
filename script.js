@@ -373,7 +373,7 @@ function generatePDF() {
     doc.text("Decision Descriptions", 20, yPos);
     yPos += 10;
     doc.setFont('Poppins', 'normal');
-    doc.setFontSize(10);
+    doc.setFontSize(12);
     const additionalText = [
 	  "This quiz assesses your general decision making style based on the standardised GDMS survey.",
       "Systemic style: Systemic or rational decision makers tend to make decisions slowly and carefully, ensuring they have all the facts before proceeding. This style emphasises searching and evaluating alternatives.",
