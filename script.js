@@ -3,9 +3,9 @@ const quizData = [
     "id": 1,
     "text": "I make sure that I have all the facts before I make a decision.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "A"
   },
@@ -13,9 +13,9 @@ const quizData = [
     "id": 2,
     "text": "When I make a decision I do what feels right.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "B"
   },
@@ -23,9 +23,9 @@ const quizData = [
     "id": 3,
     "text": "I often ask other people to help me make important decisions.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "C"
   },
@@ -33,9 +33,9 @@ const quizData = [
     "id": 4,
     "text": "I don't like making decisions, so I try to avoid it.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "D"
   },
@@ -43,9 +43,9 @@ const quizData = [
     "id": 5,
     "text": "I make decisions quickly.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "E"
   },
@@ -53,9 +53,9 @@ const quizData = [
     "id": 6,
     "text": "I make decisions in a slow, logical way.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "A"
   },
@@ -63,9 +63,9 @@ const quizData = [
     "id": 7,
     "text": "When I make a decision I rely on my instincts.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "B"
   },
@@ -73,9 +73,9 @@ const quizData = [
     "id": 8,
     "text": "I don't make big decisions without talking to other people first.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "C"
   },
@@ -83,9 +83,9 @@ const quizData = [
     "id": 9,
     "text": "I usually won't make an important decision until I'm forced to do so.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "D"
   },
@@ -93,9 +93,9 @@ const quizData = [
     "id": 10,
     "text": "I don't think too much about the decisions that I make.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "E"
   },
@@ -103,9 +103,9 @@ const quizData = [
     "id": 11,
     "text": "Making decisions requires careful thought.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "A"
   },
@@ -113,9 +113,9 @@ const quizData = [
     "id": 12,
     "text": "A decision doesn't need to make sense. It just needs to feel right.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "B"
   },
@@ -123,9 +123,9 @@ const quizData = [
     "id": 13,
     "text": "When I need to make an important decision, I like to have someone point me in the right direction.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "C"
   },
@@ -133,9 +133,9 @@ const quizData = [
     "id": 14,
     "text": "I try to put off making important decisions because thinking about them makes me feel uneasy.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "D"
   },
@@ -143,9 +143,9 @@ const quizData = [
     "id": 15,
     "text": "When I need to make an important decision I just do what seems natural at the moment.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "E"
   },
@@ -153,9 +153,9 @@ const quizData = [
     "id": 16,
     "text": "I consider all of my options before making a decision.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "A"
   },
@@ -163,9 +163,9 @@ const quizData = [
     "id": 17,
     "text": "I rely on my inner feelings when making decisions.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "B"
   },
@@ -173,9 +173,9 @@ const quizData = [
     "id": 18,
     "text": "When I make a decision, I rely on other people's advice.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "C"
   },
@@ -183,9 +183,9 @@ const quizData = [
     "id": 19,
     "text": "I usually make important decisions at the last minute.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "D"
   },
@@ -193,9 +193,9 @@ const quizData = [
     "id": 20,
     "text": "I often make impulsive decisions.",
     "options": [
-      { "value": 1, "text": "False" },
-      { "value": 2, "text": "Sometimes, depending on the situation" },
-      { "value": 3, "text": "True" }
+      { "value": 0, "text": "False" },
+      { "value": 1, "text": "Sometimes, depending on the situation" },
+      { "value": 2, "text": "True" }
     ],
     "weighting": "E"
   }
@@ -219,6 +219,8 @@ const quizEl = document.getElementById("quiz");
 const resultsEl = document.getElementById("results");
 const restartBtn = document.getElementById("restart");
 const downloadPDFBtn = document.getElementById("downloadPDF");
+const progressBarEl = document.getElementById("progress-bar");
+const progressTextEl = document.getElementById("progress-text");
 
 function loadQuestion() {
   if (currentQuestion < quizData.length) {
@@ -232,6 +234,8 @@ function loadQuestion() {
       button.addEventListener("click", () => selectChoice(index));
       choicesEl.appendChild(button);
     });
+
+    updateProgressBar();
   } else {
     showResults();
   }
@@ -248,44 +252,62 @@ function selectChoice(index) {
   loadQuestion();
 }
 
+function updateProgressBar() {
+  const progress = (currentQuestion / quizData.length) * 100;
+  progressBarEl.style.width = `${progress}%`;
+  progressTextEl.textContent = `Question ${currentQuestion + 1} of ${quizData.length}`;
+}
+
 function showResults() {
   quizEl.style.display = "none";
   resultsEl.style.display = "block";
 
   const categories = Object.keys(scores);
-  const maxScore = 8 * 3; // 4 questions per category, max value of 3 per question
+  const maxScore = 12 * 3; // 4 questions per category, max value of 3 per question
   const categoryScores = categories.map(category => (scores[category] / maxScore) * 100);
 
-  const ctx = document.getElementById('radarChart').getContext('2d');
+  const ctx = document.getElementById('polarChart').getContext('2d');
   new Chart(ctx, {
-    type: 'radar',
+    type: 'polarArea',
     data: {
       labels: categories,
       datasets: [{
         label: 'Your General Decision Making Style',
         data: categoryScores,
-        backgroundColor: 'rgba(255, 196, 51, 0.2)',
-        borderColor: 'rgb(255, 196, 51)',
-        pointBackgroundColor: 'rgb(255, 196, 51)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgb(255, 196, 51)'
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.5)',
+          'rgba(54, 162, 235, 0.5)',
+          'rgba(255, 206, 86, 0.5)',
+          'rgba(75, 192, 192, 0.5)',
+          'rgba(153, 102, 255, 0.5)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)'
+        ],
+        borderWidth: 1
       }]
     },
     options: {
-      elements: {
-        line: {
-          borderWidth: 3
-        }
-      },
+      responsive: true,
       scales: {
         r: {
-          angleLines: {
-            display: false
-          },
-          suggestedMin: 0,
-          suggestedMax: 50
+          pointLabels: {
+            display: true,
+            centerPointLabels: true,
+            font: {
+              size: 18
+            }
+          }
         }
+      },
+      plugins: {
+        legend: {
+          position: 'top',
+        },
       }
     }
   });
@@ -320,7 +342,7 @@ function generatePDF() {
 
     doc.setFontSize(20);
     doc.setFont('Poppins', 'bold');
-    doc.text("Decision Making Style Results", 105, 25, null, null, "center");
+    doc.text("General Decision Making Style Results", 105, 25, null, null, "center");
 
     doc.setFontSize(12);
     doc.setFont('Poppins', 'bold');
@@ -329,7 +351,7 @@ function generatePDF() {
     yPos += 10;
 
     const categories = Object.keys(scores);
-    const maxScore = 8 * 3; // 4 questions per category, max value of 3 per question
+    const maxScore = 12 * 3; // 4 questions per category, max value of 3 per question
 
     categories.forEach(category => {
       const score = (scores[category] / maxScore) * 100;
@@ -342,23 +364,23 @@ function generatePDF() {
     doc.text("Decision Descriptions", 20, yPos);
     yPos += 10;
     doc.setFont('Poppins', 'normal');
-    doc.setFontSize(13);
+    doc.setFontSize(10);
     const additionalText = [
       "This quiz assesses your general decision making style based on the standardised GDMS survey.",
-      "Rational/systemic: emphasises a thorough search for and logical evaluation of alternatives.",
-      "Avoidant: emphasises postponing and avoiding decisions.",
-      "Dependent: emphasises a search for advice and direction from others.",
-      "Intuitive: emphasises a reliance on hunches and feelings.",
-      "Spontaneous: emphasises a sense of immediacy and a desire to get through the decision-making process as soon as possible.",
-      "If you have equally high scores in more than one area, it means that you regularly use more than one decision-making style.",
-      "Skilled decision-makers are able to use more than one style and in real life most of us do. They're able to be flexible and use the style that best fits the situation."
+      "Systemic style: Systemic or rational decision makers tend to make decisions slowly and carefully, ensuring they have all the facts before proceeding. This style emphasises searching and evaluating alternatives.",
+      "Intuitive style: When making a decision, you tend to rely on your feelings. Intuitive decision making emphasises a reliance on hunches and instinct.",
+	  "Dependent style: May find it hard to make decisions without other people's support. Dependent decision making emphasises a search for advice and direction from others.",
+	  "Avoidant style: Tends to dislike making important decisions, making you feel uneasy and uncomfortable. Avoidant decision making emphasises postponing and avoiding decisions.",
+      "Spontaneous style: Able to make important decisions quickly and easily, often based on impulses. This style emphasises a sense of immediacy and a desire to get through the decision-making process as soon as possible.",
+      "If you have equally high scores in more than one area, it means that you regularly use more than one decision-making style. Skilled decision-makers are able to use more than one style and in real life most of us do. They're able to be flexible and use the style that best fits the situation."
+	  "To learn more about decision making styles, check out this course on the [Neuropsychology of Decision Making from the University of Cambridge](https://learning.edx.org/course/course-v1:UniversityofCambridge+2223EDX002+2T2024/home)"
     ];
     additionalText.forEach(text => {
       doc.text(text, 20, yPos, { maxWidth: 170 });
       yPos += doc.getTextDimensions(text, { maxWidth: 170 }).h + 2;
     });
 
-    html2canvas(document.getElementById("radarChart")).then(canvas => {
+    html2canvas(document.getElementById("polarChart")).then(canvas => {
       const imgData = canvas.toDataURL("image/png");
       const imgWidth = 150;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
