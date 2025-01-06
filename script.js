@@ -335,10 +335,10 @@ function generatePDF() {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
 
-  // Add Poppins font
-  doc.addFont('https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1tvFP-KUEg.ttf', 'Poppins', 'normal');
-  doc.addFont('https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1tvFP-KUEg.ttf', 'Poppins', 'bold');
-  doc.setFont('Poppins');
+  // Add Manrope font
+  doc.addFont('https://fonts.gstatic.com/s/manrope/v20/pxiByp8kv8JHgFVrLDz8V1tvFP-KUEg.ttf', 'Manrope', 'normal');
+  doc.addFont('https://fonts.gstatic.com/s/manrope/v20/pxiByp8kv8JHgFVrLGT9V1tvFP-KUEg.ttf', 'Manrope', 'bold');
+  doc.setFont('Manrope');
 
   // Add logo to the PDF
   const logoImg = new Image();
@@ -350,11 +350,11 @@ function generatePDF() {
     doc.addImage(logoImg, 'PNG', pageWidth - imgWidth - 10, 10, imgWidth, imgHeight);
 
     doc.setFontSize(20);
-    doc.setFont('Poppins', 'bold');
+    doc.setFont('Manrope', 'bold');
     doc.text("Decision Making Style Results", 105, 25, null, null, "center");
 
     doc.setFontSize(12);
-    doc.setFont('Poppins', 'bold');
+    doc.setFont('Manrope', 'bold');
     let yPos = 40;
     doc.text("Your Decision Style Profile", 20, yPos);
     yPos += 10;
@@ -369,10 +369,10 @@ function generatePDF() {
     });
 
     yPos += 10;
-    doc.setFont('Poppins', 'bold');
+    doc.setFont('Manrope', 'bold');
     doc.text("Decision Style Descriptions", 20, yPos);
     yPos += 10;
-    doc.setFont('Poppins', 'normal');
+    doc.setFont('Manrope', 'normal');
     doc.setFontSize(12);
     const additionalText = [
       "This quiz assesses your general decision making style based on the standardised GDMS survey.",
